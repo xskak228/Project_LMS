@@ -76,7 +76,7 @@ words = ['avito', 'slando', 'ebay', 'instagram', 'yandex', 'google', 'yahoo', 's
 
 def main():
     db_session.global_init("db/blogs.db")
-    app.run(port=5050)
+    app.run()
 
 
 @login_manager.user_loader
