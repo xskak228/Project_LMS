@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if current_user.is_authenticated %}
+
+<form action="" method="post", class="Form">
+    {{ form.hidden_tag() }}
+    <div class="T_Area">
+    <p style="max-width: 100px">
+        {{ form.FileWord_btn.label }}<br>
+        {{ form.FileWord_btn }}
+    </p>
+     <p>
+        {{ form.Area.label }}<br>
+        {{ form.Area(class="form-control") }}<br>
+        {% for error in form.Area.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+        </div>
+
+
+    <div class="sett">
+         <p>
+        {{ form.min_len_word.label }}<br>
+        {{ form.min_len_word(class="form-control") }}<br>
+        {% for error in form.min_len_word.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+     <p>
+        {{ form.max_len_word.label }}<br>
+        {{ form.max_len_word(class="form-control") }}<br>
+        {% for error in form.max_len_word.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+        <p>
+        {{ form.population.label }}<br>
+        {{ form.population(class="form-control") }}<br>
+        {% for error in form.population.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    <p>
+        {{ form.mutation.label }}<br>
+        {{ form.mutation(class="form-control") }}<br>
+        {% for error in form.mutation.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    <p>
+        {{ form.submit(class="form-control") }}<br>
+        {% for error in form.submit.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+
+        {{ form.erase(class="form-control") }}<br>
+        {% for error in form.erase.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+
+        </p>
+     </div>
+    <div class="out">
+        <p>
+        {{ form.Area_out.label }}<br>
+        {{ form.Area_out(class="form-control") }}<br>
+        {% for error in form.Area_out.errors %}
+            <p class="alert alert-danger" role="alert">
+                {{ error }}
+            </p>
+        {% endfor %}
+    </p>
+    </div>
+
+</form>
+{% endif %}
+{% endblock %}

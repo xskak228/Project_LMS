@@ -1,0 +1,70 @@
+#max_len_word, #min_len_word, #population, #mutation, #submit, #erase{
+    max-width: 100px !important;
+}
+
+#submit{
+    background-color: darkcyan;
+    color: white;
+    border: 1px solid;
+    border-radius: 10px;
+}
+
+#erase{
+    background-color: firebrick;
+    color: white;
+    border: 1px solid;
+    border-radius: 30px;
+}
+
+.T_Area {
+    min-width: 300px !important;
+    padding: 20px;
+}
+
+.out {
+    min-width: 300px !important;
+    padding: 20px;
+    padding-top: 92px;
+}
+
+#Area_out{
+    min-height: 600px !important;
+    max-width: 800px !important;
+}
+
+.sett {
+    padding: 20px;
+    padding-top: 92px;
+}
+
+#Area {
+    min-height: 600px !important;
+    max-width: 800px !important;
+}
+
+#FileWord_btn {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+
+.Form {
+    display: flex;
+    justify-content: space;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+a.navbar-brand {
+    background-color: gray !important;
+    color: white !important;
+    font-family: cursive;
+    font-weight: bold;
+
+    border: 1px solid;
+    border-radius: 10px;
+}
